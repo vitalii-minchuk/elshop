@@ -1,0 +1,67 @@
+.index-goods {
+  &__wrapper {
+    margin-bottom: 80px;
+  }
+
+  &__title {
+    position: relative;
+    padding: 7px 0;
+    margin-bottom: 30px;
+  }
+
+  &__title::after {
+    content: "";
+    position: absolute;
+    bottom: 0;
+    left: -10%;
+    width: 120%;
+    height: 1px;
+    background-color: #e5e5e5;
+  }
+
+  &__content {
+    display: grid;
+    grid-template-columns: repeat(4, 1fr);
+    row-gap: 60px;
+    column-gap: 30px;
+  }
+
+  &__banner {
+    margin: 50px 0;
+    background-color: #142840;
+  }
+
+  &__banner-box {
+    display: flex;
+    justify-content: space-around;
+    align-items: center;
+    gap: 30px;
+    padding: 5px 15px;
+  }
+
+  &__banner-text {
+    color: #fff;
+  }
+
+  &__banner-text-top {
+    font-weight: 500;
+    margin-bottom: 80px;
+  }
+
+  &__banner-text-bottom {
+    span {
+      font-weight: 600;
+    }
+  }
+
+  &__banner-picture {
+    max-height: 290px;
+    overflow: hidden;
+  }
+  
+  &__banner-img {
+    object-fit: cover;
+    max-width: 500px;
+    height: 95%;
+  }
+}

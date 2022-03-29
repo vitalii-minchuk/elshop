@@ -1,0 +1,108 @@
+.instal {
+  margin-bottom: 70px;
+
+  &__mini-box {
+    margin-bottom: 30px;
+  }
+
+  &__mini-box-inner {
+    display: grid;
+    grid-template-columns: repeat(4, 1fr);
+    row-gap: 20px;
+    column-gap: 20px;
+  }
+
+  &__mini-box-wrapper {
+    display: flex;
+    gap: 8px;
+    margin-bottom: 5px;
+  }
+
+  &__mini-box-title {
+    font-weight: 500;
+    font-size: 18px;
+    line-height: 25px;
+  }
+
+  &__mini-box-icon {
+    width: 27px;
+    height: 27px;
+  }
+
+  &__mini-box-text {
+    padding-left: 37px;
+  }
+
+  &__table-inner {
+    max-width: 1000px;
+  }
+
+  &__table-header {
+    border-bottom: 2px solid #437fc8;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding-top: 10px;
+    padding-bottom: 10px;
+    font-weight: 500;
+  }
+
+  &__table-header-name {
+    padding-left: 30px;
+  }
+
+  &__table-header-param {
+    flex: 0 1 260px;
+    text-align: center;
+  }
+
+  &__table-item {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding-top: 10px;
+    padding-bottom: 10px;
+    font-size: 15px;
+    line-height: 22px;
+  }
+  
+  &__table-item:not(:first-child) {
+    border-top: 1px solid #c4c4c4;
+  }
+
+  &__table-item-name {
+    padding-left: 30px;
+    padding-right: 30px;
+  }
+
+  &__table-item-param {
+    flex: 0 1 260px;
+    text-align: center;
+  }
+
+  &__table-open-category {
+    background-color: #eff3f9;
+    cursor: pointer;
+    padding: 10px 30px;
+    font-weight: 500;
+    line-height: 22px;
+    position: relative;
+    margin-bottom: 3px;
+  }
+
+  &__table-open-category::after {
+    content: "";
+    position: absolute;
+    top: 50%;
+    right: 20px;
+    width: 14px;
+    height: 10px;
+    background: url(../img/arr-up-blue.svg) no-repeat center;
+    transform: rotate(0deg) translateY(-50%);
+    transition: all 0.1s;
+  }
+
+  .open-category-active::after {
+    transform: rotate(180deg) translateY(50%);
+  }
+}

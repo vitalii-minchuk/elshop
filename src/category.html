@@ -1,0 +1,55 @@
+<!DOCTYPE html>
+<html lang="ru">
+
+<head>
+  <meta charset="UTF-8">
+  <meta http-equiv="X-UA-Compatible" content="IE=edge">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>elshop</title>
+  <link rel="stylesheet"
+    href="https://cdnjs.cloudflare.com/ajax/libs/ion-rangeslider/2.3.1/css/ion.rangeSlider.min.css" />
+  <link rel="stylesheet" href="css/style.min.css">
+  <link href="https://fonts.googleapis.com/css2?family=Montserrat:wght@200;300;400;500;600;700&display=swap"
+    rel="stylesheet">
+</head>
+
+<body>
+  @@include('_header.html')
+  @@include('_breadcrumbs.html')
+  <section class="category-page">
+    <div class="container">
+      <h4 class="category-page__title">Холодильники</h4>
+      <ul class="category-page__mini-filter">
+        <li class="category-page__mini-filter-item">
+          <a class="category-page__mini-filter-link" href="#">Инверторные</a>
+        </li>
+        <li class="category-page__mini-filter-item">
+          <a class="category-page__mini-filter-link" href="#">Инверторные с дисплеем</a>
+        </li>
+        <li class="category-page__mini-filter-item">
+          <a class="category-page__mini-filter-link" href="#">Недорогие</a>
+        </li>
+        <li class="category-page__mini-filter-item">
+          <a class="category-page__mini-filter-link" href="#">Ширина 50 см</a>
+        </li>
+        <li class="category-page__mini-filter-item">
+          <a class="category-page__mini-filter-link" href="#">Ещё</a>
+        </li>
+      </ul>
+      <div class="category-page__wrapper">
+        <div class="category-page__filter">
+          @@include('_category-page__filter.html')
+        </div>
+        <div class="category-page__content">
+          @@include('_category-page__content.html')
+        </div>
+      </div>
+    </div>
+  </section>
+  @@include('_index-articl.html')
+  @@include('_footer.html')
+  <script src="js/script.min.js"></script>
+  <script src="https://cdnjs.cloudflare.com/ajax/libs/ion-rangeslider/2.3.1/js/ion.rangeSlider.min.js"></script>
+</body>
+
+</html>

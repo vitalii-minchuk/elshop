@@ -1,0 +1,101 @@
+.profile {
+  &__wrapper {
+    margin-top: 70px;
+  }
+
+  &__top {
+    display: flex;
+    gap: 20px;
+    align-items: center;
+    margin-bottom: 30px;
+  }
+
+  &__user-photo {
+    min-width: 100px;
+    min-height: 100px;
+    background: #eff3f9;
+    border-radius: 50%;
+    position: relative;
+  }
+
+  &__user-icon {
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    width: 48px;
+    height: 48px;
+    transform: translate(-50%, -50%);
+  }
+
+  &__cont-wrapper {
+    display: flex;
+    justify-content: space-between;
+    gap: 30px;
+  }
+
+  &__cont {
+    width: 66.6%;
+  }
+
+  &__cont-inner {
+    display: grid;
+    grid-template-columns: repeat(2, 1fr);
+    gap: 30px;
+  }
+
+  &__cont-item-title {
+    margin-bottom: 20px;
+  }
+
+  &__cont-item-mini-title {
+    display: block;
+    font-size: 14px;
+    color: #999999;
+    margin-bottom: 5px;
+  }
+
+  &__cont-item-mini-text {
+    font-size: 18px;
+    color: #404040;
+    margin-bottom: 5px;
+  }
+
+  &__little {
+    font-weight: 500;
+    font-size: 14px;
+    line-height: 30px;
+
+    &::after {
+      content: "";
+      position: absolute;
+      top: 0;
+      left: 0;
+      width: 16px;
+      height: 16px;
+      background: url(../img/pencil-blue.svg) no-repeat center;
+      object-fit: fill;
+      background-size: contain;
+    }
+  }
+
+  &__cont-phone {
+    width: 33.3%;
+  }
+
+  &__btn {
+    display: block;
+    width: fit-content;
+    margin: 40px 20px;
+    padding: 10px 40px;
+    font-weight: 600;
+    font-size: 18px;
+    line-height: 25px;
+    color: #ffffff;
+    background: #437fc8;
+    border-radius: 5px;
+  }
+  
+  &__btn:hover {
+    filter: brightness(130%);
+  }
+}

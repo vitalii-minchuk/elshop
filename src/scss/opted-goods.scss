@@ -1,0 +1,12 @@
+.opted-goods {
+  &__wrapper {
+    display: flex;
+    justify-content: space-between;
+    gap: 30px;
+    margin-bottom: 70px;
+  }
+  
+  &__cont {
+    width: 75%;
+  }
+}

@@ -1,0 +1,239 @@
+.goods {
+  &__item {
+    max-width: 315px;
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+    padding: 5px;
+    position: relative;
+  }
+
+  &__item:hover {
+    box-shadow: 0px 0px 15px rgba(0, 0, 0, 0.1);
+  }
+
+  &__item-active &__item-like {
+    display: block;
+    display: flex;
+    flex-direction: column;
+    gap: 10px;
+    transition: all 0.4s;
+  }
+
+  &__item-img-box {
+    display: block;
+    max-width: 305px;
+    min-height: 305px;
+    position: relative;
+    display: grid;
+    place-content: center;
+
+    picture {
+      display: grid;
+      place-content: center;
+    }
+  }
+
+  &__item-img-box:hover &__item-img {
+    transform: scale(95%);
+  }
+
+  &__item-img-box:hover &__item-like {
+    display: block;
+    display: flex;
+    flex-direction: column;
+    gap: 10px;
+    transition: all 0.4s;
+  }
+
+  &__item-top-info {
+    position: absolute;
+    top: 0;
+    left: 0;
+    z-index: 5;
+    display: flex;
+    flex-direction: column;
+  }
+
+  &__item-spec {
+    display: inline-block;
+    font-weight: 600;
+    font-size: 14px;
+    line-height: 25px;
+    background: #55bb9f;
+    border-radius: 5px;
+    color: #fff;
+    padding: 5px 18px;
+    margin-bottom: 8px;
+    opacity: 0.8;
+  }
+
+  &__item-present {
+    display: inline-block;
+    font-weight: 600;
+    font-size: 14px;
+    line-height: 25px;
+    background: #7fb1ed;
+    border-radius: 5px;
+    color: #fff;
+    padding: 5px 18px;
+    margin-bottom: 10px;
+    opacity: 0.8;
+  }
+
+  &__item-discaunt {
+    display: inline-block;
+    font-weight: 600;
+    font-size: 14px;
+    line-height: 25px;
+    background: #fc443b;
+    border-radius: 5px;
+    color: #fff;
+    padding: 5px 10px;
+    margin-bottom: 10px;
+    opacity: 0.8;
+  }
+
+  &__item-like {
+    display: none;
+    position: absolute;
+    top: 0;
+    right: 0;
+    z-index: 50;
+  }
+
+  &__item-like-icon-heart {
+    display: block;
+    width: 18px;
+    height: 18px;
+    background: url(../img/heart-emp.svg) no-repeat center;
+    cursor: pointer;
+  }
+
+  &__item-like-icon-compare {
+    display: block;
+    width: 18px;
+    height: 18px;
+    background: url(../img/compare.svg) no-repeat center;
+    cursor: pointer;
+  }
+
+  &__item-like-icon-heart-active {
+    display: block;
+    width: 18px;
+    height: 18px;
+    background: url(../img/heart-full.svg) no-repeat center;
+  }
+
+  &__item-like-icon-compare-active {
+    display: block;
+    width: 18px;
+    height: 18px;
+    background: url(../img/tick-green.svg) no-repeat center;
+  }
+
+  &__item-bottom-info {
+    position: absolute;
+    bottom: 5px;
+    left: 0;
+    z-index: 5;
+  }
+
+  &__item-img {
+    width: 90%;
+    height: 90%;
+    margin: 0 auto;
+    transition: all 0.5s;
+  }
+
+  &__item-price {
+    margin-top: auto;
+    display: flex;
+    gap: 20px;
+    margin-bottom: 15px;
+  }
+
+  &__item-old {
+    font-weight: 600;
+    font-size: 14px;
+    line-height: 25px;
+    color: #6e6e6e;
+  }
+
+  &__item-new {
+    font-weight: 600;
+    font-size: 20px;
+    line-height: 25px;
+    color: #404040;
+  }
+
+  &__item-name {
+    font-size: 16px;
+    line-height: 22px;
+    color: #1e1e1e;
+  }
+
+  &__item-info {
+    display: flex;
+    gap: 10px;
+    margin-bottom: 30px;
+  }
+
+  &__item-rate {
+    cursor: pointer;
+  }
+
+  &__item-comment {
+    display: flex;
+    align-items: center;
+    gap: 10px;
+  }
+
+  &__item-comment-img {
+    width: 20px;
+    height: 20px;
+  }
+
+  &__item-comment-num {
+    display: block;
+    font-weight: 500;
+    font-size: 14px;
+    line-height: 25px;
+    color: #6e6e6e;
+  }
+
+  &__item-add-to-cart {
+    display: inline-block;
+    color: #fff;
+    background: #437fc8;
+    border-radius: 5px;
+    padding: 10px 30px;
+    cursor: pointer;
+    font-weight: 600;
+    font-size: 15px;
+    line-height: 25px;
+    width: fit-content;
+    transition: all 0.4s;
+  }
+
+  &__item-add-to-cart:hover {
+    filter: brightness(120%);
+  }
+
+  &__item-add-to-cart-disabled {
+    display: inline-block;
+    color: #fff;
+    background: #999999;
+    border-radius: 5px;
+    padding: 10px 30px;
+    cursor: pointer;
+    font-weight: 600;
+    font-size: 15px;
+    line-height: 25px;
+    width: fit-content;
+  }
+  
+  &__item-add-to-cart-disabled:hover {
+    filter: brightness(90%);
+  }
+}

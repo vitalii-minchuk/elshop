@@ -1,0 +1,92 @@
+.footer {
+  &__wrapper {
+    margin-top: 60px;
+    border-bottom: 1px solid #e5e5e5;
+    border-top: 1px solid #e5e5e5;
+  }
+
+  &__content {
+    display: grid;
+    grid-template-columns: repeat(4, 1fr);
+    gap: 25px;
+    padding: 25px 0;
+    color: #404040;
+  }
+
+  &__logo {
+    margin-left: -15px;
+  }
+
+  &__contacts-link {
+    display: inline-block;
+    padding-bottom: 20px;
+  }
+
+  &__contacts-socials {
+    padding-bottom: 40px;
+  }
+
+  &__contacts-socials-icon {
+    width: 26px;
+    height: 26px;
+  }
+
+  &__content-contacts-adress-text {
+    font-size: 15px;
+    line-height: 25px;
+  }
+
+  &__content-info {
+    display: block;
+    font-size: 15px;
+    line-height: 30px;
+  }
+
+  &__content-info-item {
+    transition: all 0.3s;
+    padding: 2px 0;
+  }
+
+  &__content-info-item:hover {
+    transform: translateX(3px);
+  }
+
+  &__copy {
+    padding: 20px 0;
+    text-align: center;
+  }
+
+  &__copy-text {
+    font-size: 13px;
+    line-height: 18px;
+  }
+}
+
+.footer-phone {
+  font-size: 24px;
+  line-height: 25px;
+  font-weight: 500;
+}
+
+.top-page-btn {
+  cursor: pointer;
+  display: none;
+  opacity: 0.5;
+  position: fixed;
+  right: 6%;
+  bottom: 10%;
+  z-index: 55;
+  background-image: url(../img/arr-up-btn.svg);
+  background-position: center;
+  background-repeat: no-repeat;
+  background-size: 25px 14px;
+  width: 65px;
+  height: 65px;
+  background-color: transparent;
+  border: 1px solid #6e6e6e;
+  border-radius: 50%;
+}
+
+.top-page-btn:hover {
+  opacity: 1;
+}

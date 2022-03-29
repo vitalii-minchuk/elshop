@@ -1,0 +1,85 @@
+.user-popup {
+  &__name {
+    display: block;
+    width: 100%;
+    font-size: 18px;
+    line-height: 20px;
+    text-align: center;
+    margin-bottom: 20px;
+
+    span {
+      font-weight: 600;
+    }
+  }
+
+  &__form {
+    width: 100%;
+    margin-bottom: 20px;
+  }
+
+  &__input {
+    width: 100%;
+    margin: 0 auto;
+    display: block;
+    border: 1px solid #e5e5e5;
+    border-radius: 5px;
+    padding: 10px;
+    display: block;
+    font-size: 16px;
+    line-height: 25px;
+    outline: none;
+  }
+
+  &__input-name {
+    display: block;
+    padding: 0 0 10px 30px;
+    font-size: 14px;
+    line-height: 35px;
+    color: #999999;
+  }
+
+  &__input-wrapper {
+    width: 60%;
+    display: flex;
+    gap: 20px;
+    margin: 0 auto;
+  }
+
+  &__input-sms {
+    width: 37px;
+    font-weight: 500;
+    font-size: 18px;
+    line-height: 25px;
+    color: #1e1e1e;
+  }
+
+  &__input::placeholder {
+    color: #999999;
+  }
+
+  &__text {
+    text-align: center;
+    display: block;
+    width: 100%;
+    font-size: 15px;
+    line-height: 20px;
+    margin-bottom: 35px;
+  }
+
+  &__btn {
+    width: fit-content;
+    display: block;
+    font-weight: 600;
+    font-size: 16px;
+    line-height: 25px;
+    color: #ffffff;
+    background: #437fc8;
+    border-radius: 5px;
+    padding: 10px 30px;
+    margin: 0 auto 30px;
+  }
+  
+  &__btn:hover {
+    filter: brightness(130%);
+  }
+}

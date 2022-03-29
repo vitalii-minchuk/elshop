@@ -1,0 +1,198 @@
+.compare-page {
+  &__title-wrapper {
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    margin-bottom: 40px;
+  }
+
+  &__clear-page {
+    padding-left: 25px;
+    position: relative;
+    font-size: 16px;
+    line-height: 22px;
+    color: #6e6e6e;
+    cursor: pointer;
+  }
+
+  &__clear-page:hover {
+    filter: brightness(50%);
+  }
+
+  &__clear-page::before {
+    content: "";
+    position: absolute;
+    top: 50%;
+    left: 0;
+    transform: translateY(-50%);
+    width: 15px;
+    height: 15px;
+    background: url(../img/close-grey.svg) no-repeat center;
+  }
+
+  &__wrapper {
+    display: flex;
+    justify-content: space-between;
+  }
+
+  &__char-list {
+    width: 25%;
+  }
+
+  &__no-image {
+    height: 360px;
+    display: flex;
+    align-items: flex-end;
+  }
+
+  &__char-list-text {
+    font-size: 16px;
+    line-height: 22px;
+    color: #6e6e6e;
+    display: block;
+    padding-bottom: 60px;
+    cursor: pointer;
+  }
+
+  &__tech-title {
+    padding: 12px 18px;
+    font-size: 18px;
+    line-height: 22px;
+  }
+
+  &__tech-title + &__tech-title {
+    padding: 12px 18px;
+    font-size: 18px;
+    line-height: 22px;
+    border-top: 1px solid #c4c4c4;
+  }
+
+  &__tech-param {
+    padding: 12px 18px;
+    font-size: 18px;
+    line-height: 22px;
+    border-left: 1px solid #c4c4c4;
+  }
+
+  &__tech-param + &__tech-param {
+    padding: 12px 18px;
+    font-size: 18px;
+    line-height: 22px;
+    border-top: 1px solid #c4c4c4;
+  }
+
+  &__slider {
+    width: 75%;
+    position: relative;
+
+    .slick-arrow {
+      position: absolute;
+      display: block;
+      border: 1px solid #c4c4c4;
+      border-radius: 50%;
+      font-size: 0;
+      width: 30px;
+      height: 30px;
+      background: url("../img/arr-up.svg") no-repeat center;
+      cursor: pointer;
+      padding: 7px;
+      overflow: hidden;
+    }
+
+    .slick-arrow:hover {
+      filter: brightness(50%);
+    }
+
+    .slick-next {
+      left: -45px;
+      top: 0;
+      transform: rotate(270deg);
+    }
+
+    .slick-prev {
+      left: -45px;
+      top: 45px;
+      transform: rotate(90deg);
+    }
+  }
+
+  &__item {
+    position: relative;
+  }
+
+  &__image {
+    height: 360px;
+    border-left: 1px solid #c4c4c4;
+    padding: 0 35px 35px 35px;
+  }
+
+  &__image-close-link {
+    position: absolute;
+    top: 3px;
+    right: 14px;
+  }
+
+  &__image-close-icon {
+    width: 15px;
+    height: 15px;
+  }
+
+  &__image-close-icon:hover {
+    filter: brightness(50%);
+  }
+
+  &__img {
+    display: block;
+    width: auto;
+    height: auto;
+    margin: 0 auto;
+    max-width: 100%;
+    max-height: 220px;
+    padding: 10px;
+  }
+
+  &__price {
+    font-weight: 600;
+    font-size: 20px;
+    line-height: 25px;
+    color: #404040;
+    margin-bottom: 7px;
+  }
+
+  &__product-name {
+    line-height: 20px;
+    height: 40px;
+    overflow: auto;
+    margin-bottom: 7px;
+  }
+
+  &__item-info {
+    display: flex;
+    align-items: center;
+    gap: 10px;
+  }
+
+  &__item-rate {
+    display: flex;
+  }
+
+  &__item-comment {
+    display: flex;
+    align-items: center;
+    gap: 10px;
+  }
+
+  &__tech-category-notitle {
+    background: #eff3f9;
+    padding: 12px 18px;
+    font-size: 18px;
+    line-height: 22px;
+  }
+  
+  &__tech-category-title {
+    background: #eff3f9;
+    padding: 12px 18px;
+    font-size: 18px;
+    line-height: 22px;
+  }
+}

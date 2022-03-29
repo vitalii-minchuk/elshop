@@ -1,0 +1,16 @@
+.breadcrumbs {
+  &__wrapper {
+    font-size: 14px;
+    line-height: 35px;
+    color: #1e1e1e;
+    margin: 20px 0;
+
+    a:hover {
+      color: #437fc8;
+    }
+    
+    span {
+      font-weight: 500;
+    }
+  }
+}

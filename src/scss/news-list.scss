@@ -1,0 +1,46 @@
+.news-list {
+  &__wrapper {
+    margin-bottom: 30px;
+  }
+
+  &__box {
+    display: grid;
+    grid-template-columns: repeat(4, 1fr);
+    column-gap: 20px;
+    row-gap: 30px;
+    padding: 0 10px;
+  }
+
+  &__box-item-link {
+    display: block;
+    overflow: hidden;
+    border-radius: 5px;
+    margin-bottom: 10px;
+  }
+
+  &__box-item-img {
+    display: block;
+    width: 100%;
+    height: auto;
+    transition: all 0.5s;
+  }
+  
+  &__box-item-img:hover {
+    transform: scale(1.1);
+  }
+
+  &__box-item-name {
+    font-weight: 600;
+    font-size: 18px;
+    line-height: 18px;
+    color: #404040;
+    display: block;
+    margin-bottom: 10px;
+  }
+
+  &__box-item-text {
+    font-size: 15px;
+    line-height: 20px;
+    color: #404040;
+  }
+}

@@ -1,0 +1,70 @@
+.user-order-list {
+  &__menu {
+    margin-bottom: 30px;
+  }
+
+  &__menu-items {
+    display: flex;
+    justify-content: space-between;
+    gap: 15px;
+  }
+
+  &__menu-item {
+    display: flex;
+    align-items: center;
+    gap: 7px;
+    transition: all 0.4s;
+
+    svg {
+      display: block;
+      width: 21px;
+      height: 21px;
+    }
+  }
+
+  &__menu-item:hover {
+    color: #fc443b;
+
+    svg {
+      path {
+        fill: #fc443b;
+      }
+
+      line {
+        stroke: #fc443b;
+      }
+    }
+  }
+
+  &__menu-item--active {
+    color: #fc443b;
+    cursor: default;
+
+    svg {
+      path {
+        stroke: #fc443b;
+        fill: #fc443b;
+      }
+
+      line {
+        stroke: #fc443b;
+      }
+    }
+  }
+
+  &__menu-item-name {
+    font-size: 18px;
+  }
+  
+  &__menu-item-num {
+    width: 25px;
+    height: 25px;
+    color: #fff;
+    font-size: 15px;
+    line-height: 25px;
+    font-weight: 700;
+    border-radius: 50%;
+    background-color: #fc413c;
+    text-align: center;
+  }
+}

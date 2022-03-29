@@ -1,0 +1,132 @@
+.index-news {
+  &__wrapper {
+    margin-bottom: 80px;
+  }
+
+  &__title {
+    position: relative;
+    padding: 7px 0;
+    margin-bottom: 30px;
+  }
+
+  &__title::after {
+    content: "";
+    position: absolute;
+    bottom: 0;
+    left: -10%;
+    width: 120%;
+    height: 1px;
+    background-color: #e5e5e5;
+  }
+
+  &__content {
+    display: grid;
+    gap: 20px;
+    grid-template-areas:
+      "A B C C"
+      "A D F E";
+  }
+
+  &__item {
+    overflow: hidden;
+    width: auto;
+    height: auto;
+    position: relative;
+  }
+
+  &__item:nth-child(1) {
+    grid-area: A;
+    width: 100%;
+    height: 100%;
+    background: url(../img/news-item-bg.jpg) no-repeat center;
+    border-radius: 5px;
+    display: grid;
+    place-content: center;
+
+    img {
+      padding: 5px 20px;
+      width: 250px;
+      margin: 0 20px;
+    }
+
+    p {
+      padding-bottom: 10px;
+    }
+  }
+
+  &__item:nth-child(2) {
+    grid-area: B;
+  }
+
+  &__item:nth-child(3) {
+    grid-area: C;
+  }
+
+  &__item:nth-child(4) {
+    grid-area: D;
+  }
+
+  &__item:nth-child(5) {
+    grid-area: F;
+  }
+
+  &__item:nth-child(6) {
+    grid-area: E;
+  }
+
+  &__item-top {
+    color: #fff;
+    position: absolute;
+    top: 15px;
+    left: 15px;
+    z-index: 6;
+  }
+
+  &__item-text {
+    color: #fff;
+    position: absolute;
+    left: 15px;
+    bottom: 15px;
+    z-index: 5;
+    font-size: 15px;
+    line-height: 18px;
+    font-weight: 600;
+  }
+
+  &__picture {
+    width: 100%;
+    height: 100%;
+    overflow: hidden;
+    border-radius: 5px;
+  }
+
+  &__link {
+    display: block;
+    width: 100%;
+    height: 100%;
+    cursor: pointer;
+  }
+
+  &__link:hover &__img {
+    transform: scale(1.1);
+  }
+
+  &__item-overley {
+    position: absolute;
+    left: 0;
+    top: 0;
+    width: 100%;
+    height: 100%;
+    z-index: 1;
+    background: linear-gradient(1.56deg, rgba(40, 40, 40, 0.78) 3.05%, rgba(30, 30, 30, 0) 98.13%);
+    border-radius: 5px;
+    overflow: hidden;
+  }
+  
+  &__img {
+    display: block;
+    width: 100%;
+    height: auto;
+    transition: all 0.5s;
+  }
+}

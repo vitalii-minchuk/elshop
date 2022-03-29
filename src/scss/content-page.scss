@@ -1,0 +1,133 @@
+.content-page {
+  margin-bottom: 70px;
+
+  &__title {
+    margin-bottom: 30px;
+  }
+
+  &__box {
+    margin-bottom: 30px;
+  }
+
+  &__text {
+    margin-bottom: 20px;
+  }
+
+  &__list-item {
+    margin-bottom: 15px;
+    position: relative;
+    padding-left: 20px;
+  }
+
+  &__list-item::before {
+    content: "\2022";
+    color: #437fc8;
+    font-weight: bold;
+    font-size: 30px;
+    display: inline-block;
+    width: 8px;
+    height: 8px;
+    position: absolute;
+    top: -1px;
+    left: 0;
+  }
+
+  &__btns {
+    margin: 30px 0;
+    display: flex;
+    gap: 20px;
+  }
+
+  &__btn {
+    font-weight: 600;
+    font-size: 18px;
+    line-height: 25px;
+    color: #ffffff;
+    padding: 10px 30px;
+    background: #437fc8;
+    border-radius: 5px;
+  }
+
+  &__btn:hover {
+    filter: brightness(130%);
+  }
+
+  &__box-subtitle {
+    font-weight: 500;
+    font-size: 18px;
+    line-height: 35px;
+  }
+
+  &__box-subtitle-wrapper {
+    display: flex;
+    align-items: center;
+    gap: 15px;
+    margin-bottom: 20px;
+  }
+
+  &__box-subtitle-icon {
+    width: 35px;
+    height: 35px;
+  }
+
+  &__box-title {
+    margin-bottom: 30px;
+  }
+
+  &__form-wrapper {
+    display: flex;
+    justify-content: space-between;
+    gap: 50px;
+  }
+
+  &__form-left {
+    width: 50%;
+  }
+
+  &__form-right {
+    display: flex;
+    flex-direction: column;
+    justify-content: space-around;
+    width: 50%;
+  }
+
+  &__form-right-title {
+    color: #404040;
+  }
+
+  &__form-right-text {
+    font-size: 15px;
+    color: #6e6e6e;
+  }
+
+  &__form-right-download {
+    margin: 20px 0;
+    font-size: 15px;
+    line-height: 18px;
+    color: #aeaeae;
+    position: relative;
+    background: #fefefe;
+    border: 1px solid #e5e5e5;
+    box-sizing: border-box;
+    border-radius: 30px;
+    width: 50%;
+    padding: 15px 50px;
+    cursor: pointer;
+  }
+
+  &__form-right-download::before {
+    content: "";
+    position: absolute;
+    top: 50%;
+    left: 20px;
+    transform: translateY(-50%);
+    width: 17px;
+    height: 17px;
+    background: url(../img/clip.svg) no-repeat center;
+  }
+}
+
+.enter-num-input {
+  width: 205px;
+  margin-bottom: 30px;
+}

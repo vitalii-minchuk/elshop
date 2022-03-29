@@ -1,0 +1,160 @@
+<!DOCTYPE html>
+<html lang="ru">
+
+<head>
+  <meta charset="UTF-8">
+  <meta http-equiv="X-UA-Compatible" content="IE=edge">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>elshop</title>
+  <link rel="stylesheet"
+    href="https://cdnjs.cloudflare.com/ajax/libs/ion-rangeslider/2.3.1/css/ion.rangeSlider.min.css" />
+  <link rel="stylesheet" href="css/style.min.css">
+  <link href="https://fonts.googleapis.com/css2?family=Montserrat:wght@200;300;400;500;600;700&display=swap"
+    rel="stylesheet">
+</head>
+
+<body>
+  @@include('_header.html')
+  <section class="breadcrumbs">
+    <div class="container">
+      <div class="breadcrumbs__wrapper">
+        <a href="">Главная</a> /
+        <span>Корзина</span>
+      </div>
+    </div>
+  </section>
+  <section class="cart-page">
+    <div class="container">
+      <h4 class="cart-page__title">Корзина</h4>
+      <div class="cart-page__wrapper-top">
+        <div class="cart-page__left">
+          @@include('_cart-item.html')
+          @@include('_cart-item.html')
+          @@include('_cart-item.html')
+        </div>
+        <div class="cart-page__right">
+          <div class="cart-page__right-total">
+            <h5 class="cart-page__right-total-text">Итого</h5>
+            <h5 class="cart-page__right-total-sum">42 900 ₴</h5>
+          </div>
+          <div class="cart-page__right-goods">
+            <p class="cart-page__right-goods-text">Товаров, 3 шт</p>
+            <p class="cart-page__right-goods-sum">65 900 ₴</p>
+          </div>
+          <div class="cart-page__right-discaunt">
+            <p class="cart-page__right-discaunt-text">Скидка</p>
+            <p class="cart-page__right-discaunt-sum">15 000 ₴</p>
+          </div>
+          <div class="cart-page__right-delivery">
+            <p class="cart-page__right-delivery-text">Доставка</p>
+            <p class="cart-page__right-delivery-sum">бесплатно</p>
+          </div>
+          <div class="cart-page__right-date">
+            <p class="cart-page__right-date-text">Доставка</p>
+            <p class="cart-page__right-date-day">04.02.2021
+              <span class="cart-page__right-date-time">10:00-18:00</span>
+            </p>
+          </div>
+          <button class="cart-page__right-btn">Оформить заказ</button>
+        </div>
+      </div>
+      <div class="cart-page__wrapper-bottom">
+        <div class="cart-page__delivery">
+          <h4 class="cart-page__subtitle">Способ доставки</h4>
+          <div class="cart-page__delivery-top">
+            <label class="cart-page__delivery-text">
+              <input class="cart-page__delivery-radio" type="radio" name="deliv">
+              Доставка курьером
+            </label>
+            <div class="cart-page__delivery-date">04.02.2021</div>
+          </div>
+          <div class="cart-page__delivery-midl">
+            <label class="cart-page__delivery-text">
+              <input class="cart-page__delivery-radio" type="radio" name="deliv">
+              Самовывоз
+            </label>
+            <div class="cart-page__delivery-date">04.02.2021</div>
+          </div>
+          <div class="cart-page__delivery-bottom">
+            <label class="cart-page__delivery-place">
+              <input class="cart-page__delivery-place-radio" type="radio" name="place">
+              г. Харьков, ул. Набережная 22
+
+            </label>
+            <label class="cart-page__delivery-place">
+              <input class="cart-page__delivery-place-radio" type="radio" name="place">
+              г. Харьков, ул. Набережная 88
+            </label>
+          </div>
+        </div>
+        <div class="cart-page__pay">
+          <h4 class="cart-page__subtitle">Способ оплаты</h4>
+          <label class="cart-page__pay-text">
+            <input class="cart-page__pay-radio" name="pay" type="radio">
+            Оплата онлайн
+          </label>
+          <label class="cart-page__pay-text">
+            <input class="cart-page__pay-radio" name="pay" type="radio">
+            Оплата при получении картой
+          </label>
+          <label class="cart-page__pay-text">
+            <input class="cart-page__pay-radio" name="pay" type="radio">
+            Оплата при получении наличными
+          </label>
+        </div>
+        <div class="cart-page__contacts">
+          <h4 class="cart-page__subtitle">Контактные данные</h4>
+          <div class="cart-page__contacts-top">
+            <div class="cart-page__contacts-top-box">
+              <p class="cart-page__contacts-top-text">Телефон</p>
+              <input class="cart-page__contacts-top-input" type="text">
+            </div>
+            <div class="cart-page__contacts-top-box">
+              <p class="cart-page__contacts-top-text">Email</p>
+              <input class="cart-page__contacts-top-input" type="text">
+            </div>
+            <div class="cart-page__contacts-top-box">
+              <p class="cart-page__contacts-top-text">Имя</p>
+              <input class="cart-page__contacts-top-input" type="text">
+            </div>
+            <div class="cart-page__contacts-top-box">
+              <p class="cart-page__contacts-top-text">Фамилия</p>
+              <input class="cart-page__contacts-top-input" type="text">
+            </div>
+            <div class="cart-page__contacts-top-box">
+              <p class="cart-page__contacts-top-text">Город</p>
+              <input class="cart-page__contacts-top-input" type="text">
+            </div>
+            <div class="cart-page__contacts-top-box">
+              <p class="cart-page__contacts-top-text">Адрес</p>
+              <input class="cart-page__contacts-top-input" type="text">
+            </div>
+          </div>
+          <div class="cart-page__contacts-midl">
+            <label class="cart-page__contacts-midl-text">
+              <input class="cart-page__contacts-midl-checkbox" type="checkbox">
+              Нужен подъем
+            </label>
+            <label class="cart-page__contacts-midl-text">
+              <input class="cart-page__contacts-midl-checkbox" type="checkbox">
+              Нужна установка
+            </label>
+            <label class="cart-page__contacts-midl-text">
+              <input class="cart-page__contacts-midl-checkbox" type="checkbox">
+              Нужна утилизация
+            </label>
+          </div>
+          <div class="cart-page__contacts-bottom">
+            <p class="cart-page__contacts-bottom-text">Комментарий</p>
+            <textarea class="cart-page__contacts-bottom-textarea"></textarea>
+          </div>
+        </div>
+      </div>
+    </div>
+  </section>
+  @@include('_footer.html')
+  <script src="js/script.min.js"></script>
+  <script src="https://cdnjs.cloudflare.com/ajax/libs/ion-rangeslider/2.3.1/js/ion.rangeSlider.min.js"></script>
+</body>
+
+</html>

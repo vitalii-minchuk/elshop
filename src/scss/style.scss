@@ -1,0 +1,117 @@
+*,
+*::after,
+*::before {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+a {
+  color: #1e1e1e;
+  text-decoration: none;
+}
+
+li {
+  list-style: none;
+}
+
+body {
+  background-color: #fff;
+  color: #1e1e1e;
+  font-size: 16px;
+  font-weight: 400;
+  line-height: 25px;
+  font-family: "Montserrat", sans-serif;
+  min-width: 320px;
+  overflow-x: hidden;
+}
+.container {
+  max-width: 1430px;
+  margin-left: auto;
+  margin-right: auto;
+  padding: 0 15px;
+  overflow-x: hidden;
+}
+
+h2 {
+  font-size: 60px;
+  line-height: 75px;
+}
+
+h3 {
+  font-weight: 600;
+  font-size: 45px;
+  line-height: 50px;
+}
+
+h4 {
+  font-weight: 400;
+  font-size: 30px;
+  line-height: 35px;
+}
+
+h5 {
+  font-weight: 400;
+  font-size: 24px;
+  line-height: 30px;
+}
+
+h6 {
+  font-weight: 400;
+  font-size: 20px;
+  line-height: 24px;
+}
+
+.hide-title {
+  display: none;
+}
+
+path,
+line {
+  transition: all 0.4s;
+}
+
+.white-popup {
+  position: relative;
+  background-color: #ffffff;
+  padding: 20px;
+  width: auto;
+  max-width: 500px;
+  margin: 20px auto;
+  border-radius: 5px;
+}
+
+@import "magnific-popup";
+@import "change-city-popup";
+@import "user-popup";
+@import "slick";
+@import "header";
+@import "header-navi";
+@import "index-slider";
+@import "breadcrumbs";
+@import "fast-view-popup";
+@import "goods-item";
+@import "category-page";
+@import "category-page__filter";
+@import "category-page__content";
+@import "full-item";
+@import "cart";
+@import "cart-item";
+@import "compare";
+@import "content-page";
+@import "instal";
+@import "contacts";
+@import "news-list";
+@import "news-page";
+@import "user-order-list";
+@import "user-order-list-menu";
+@import "opted-goods";
+@import "my-reviews";
+@import "profile";
+@import "pagination";
+@import "index-goods";
+@import "index-cataloge";
+@import "index-news";
+@import "index-articl";
+@import "footer-icons";
+@import "footer";

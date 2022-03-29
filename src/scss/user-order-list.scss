@@ -1,0 +1,257 @@
+.user-order-list {
+  &__wrapper {
+    display: flex;
+    justify-content: space-between;
+    gap: 30px;
+  }
+
+  &__orders {
+    width: 75%;
+  }
+
+  &__item {
+    overflow: hidden;
+    border: 1px solid #e5e5e5;
+    border-radius: 10px;
+    margin-bottom: 25px;
+  }
+
+  &__item-header {
+    padding: 10px 20px;
+    background: #eff3f9;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    gap: 20px;
+  }
+
+  &__item-name {
+    display: block;
+    font-weight: 500;
+    font-size: 18px;
+    line-height: 24px;
+  }
+
+  &__item-code {
+    display: block;
+    margin-right: auto;
+    font-weight: 500;
+    font-size: 16px;
+    line-height: 18px;
+    color: #437fc8;
+    transition: all 0.3s;
+  }
+
+  &__item-code:hover {
+    text-decoration: underline;
+  }
+
+  &__item-price {
+    display: block;
+    font-weight: 500;
+    font-size: 18px;
+    line-height: 24px;
+  }
+
+  &__item-info {
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+    gap: 10px;
+    width: 35%;
+    height: 100%;
+  }
+
+  &__item-info-inner {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    gap: 20px;
+    padding: 10px 20px;
+  }
+
+  &__item-info-stock {
+    background: #55bb9f;
+    border-radius: 2px;
+    display: block;
+    font-weight: 500;
+    font-size: 13px;
+    line-height: 18px;
+    color: #ffffff;
+    padding: 5px 15px;
+    text-align: center;
+    width: fit-content;
+  }
+
+  &__item-info-done {
+    background: #999999;
+    border-radius: 2px;
+    display: block;
+    font-weight: 500;
+    font-size: 13px;
+    line-height: 18px;
+    color: #ffffff;
+    padding: 5px 15px;
+    text-align: center;
+    width: fit-content;
+  }
+
+  &__item-info-delivery {
+    font-weight: 500;
+    line-height: 18px;
+    display: block;
+    width: 100%;
+    height: 100%;
+  }
+
+  &__item-info-delivery-text {
+    font-size: 14px;
+    line-height: 18px;
+    color: #6e6e6e;
+    display: block;
+    width: 100%;
+    height: 100%;
+  }
+
+  &__item-slider {
+    max-width: 65%;
+    position: relative;
+    overflow: hidden;
+
+    .slick-next {
+      position: absolute;
+      width: 40px;
+      height: 40px;
+      top: 40%;
+      right: 10%;
+      background: #ffffff;
+      box-shadow: 0px 0px 10px rgba(0, 0, 0, 0.1);
+      background: url(../img/arr-blue-slider.svg) no-repeat center;
+      z-index: 5;
+      transition: all 0.3s;
+      text-indent: -200px;
+    }
+
+    .slick-next:hover {
+      border: 1px solid #437fc8;
+    }
+
+    .slick-prev {
+      display: none !important;
+    }
+  }
+
+  &__item-mini-box {
+    max-width: 200px;
+    height: 180px;
+  }
+
+  &__item-mini-box-link {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    width: 100%;
+    height: 100%;
+  }
+
+  &__item-mini-box-picture {
+    display: grid;
+    place-content: center;
+    height: 75px;
+    margin-bottom: 10px;
+  }
+
+  &__item-mini-box-img {
+    display: block;
+    width: auto;
+    height: auto;
+    margin: 0 auto;
+    max-width: 100%;
+    height: 75px;
+  }
+
+  &__item-mini-box-text {
+    display: block;
+    font-size: 14px;
+    text-align: center;
+  }
+
+  &__user {
+    width: 25%;
+  }
+
+  &__user-header {
+    margin-bottom: 30px;
+  }
+
+  &__user-header-top {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    gap: 15px;
+    margin-bottom: 15px;
+  }
+
+  &__user-photo {
+    min-width: 60px;
+    min-height: 60px;
+    background: #eff3f9;
+    border-radius: 50%;
+    position: relative;
+  }
+
+  &__user-icon {
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    width: 35px;
+    height: 35px;
+    transform: translate(-50%, -50%);
+  }
+
+  &__user-name {
+    font-weight: 600;
+  }
+
+  &__user-header-bottom {
+    padding-left: 30px;
+    font-weight: 500;
+    font-size: 18px;
+    line-height: 30px;
+    color: #437fc8;
+    position: relative;
+    transition: all 0.3s;
+  }
+
+  &__user-header-bottom::after {
+    content: "";
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 21px;
+    height: 21px;
+    background: url(../img/pencil-blue.svg) no-repeat center;
+  }
+
+  &__user-header-bottom:hover {
+    text-decoration: underline;
+  }
+
+  &__user-text {
+    width: 100%;
+    display: block;
+    cursor: pointer;
+    font-weight: 500;
+    font-size: 18px;
+    margin-bottom: 20px;
+    transition: all 0.3s;
+  }
+
+  &__user-text:hover {
+    color: #fc443b;
+  }
+
+  &__user-text--active {
+    color: #fc443b;
+  }
+}

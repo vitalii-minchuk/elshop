@@ -1,0 +1,27 @@
+.index-articl {
+  &__wrapper {
+    margin-bottom: 35px;
+
+    p {
+      padding: 10px 0;
+      text-align: justify;
+      font-weight: 500;
+    }
+  }
+
+  &__title {
+    padding: 7px 0;
+    margin-bottom: 40px;
+    position: relative;
+  }
+  
+  &__title::after {
+    content: "";
+    position: absolute;
+    bottom: 0;
+    left: -10%;
+    width: 120%;
+    height: 1px;
+    background-color: #e5e5e5;
+  }
+}

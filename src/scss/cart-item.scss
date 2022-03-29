@@ -1,0 +1,203 @@
+.cart-item {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  gap: 20px;
+  border-bottom: 1px solid #e5e5e5;
+  padding: 20px 10px;
+
+  &__picture {
+    width: 120px;
+    height: 120px;
+    display: grid;
+    place-content: center;
+  }
+
+  &__img {
+    width: 100%;
+  }
+
+  &__name {
+    font-size: 18px;
+    line-height: 22px;
+  }
+
+  &__code {
+    font-size: 14px;
+    line-height: 22px;
+    color: #6e6e6e;
+  }
+
+  &__serv {
+    display: flex;
+    align-items: center;
+    gap: 10px;
+  }
+
+  &__serv-text {
+    font-size: 14px;
+    line-height: 22px;
+    color: #404040;
+  }
+
+  &__serv-input-wrapper {
+    width: 160px;
+    height: 35px;
+    position: relative;
+    padding: 0 5px;
+    border: 1px solid #c4c4c4;
+    border-radius: 3px;
+    cursor: pointer;
+  }
+
+  &__serv-input {
+    border: none;
+    outline-style: none;
+    background-color: transparent;
+    cursor: pointer;
+  }
+
+  &__serv-input-wrapper::after {
+    content: "";
+    width: 7px;
+    height: 9px;
+    position: absolute;
+    top: 40%;
+    right: 5px;
+    background: url(../img/arr-pagination.svg) no-repeat center;
+    transform: rotate(90deg);
+    filter: brightness(300%);
+  }
+
+  &__serv-input::placeholder {
+    font-family: "Montserrat", sans-serif;
+    font-weight: 300;
+    font-size: 14px;
+    line-height: 35px;
+    color: #404040;
+  }
+
+  &__add {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    gap: 15px;
+  }
+
+  &__add-minus {
+    display: block;
+    width: 35px;
+    height: 35px;
+    border: 1px solid #c4c4c4;
+    border-radius: 50%;
+    position: relative;
+    cursor: pointer;
+    transition: all 0.3s;
+  }
+
+  &__add-minus:hover {
+    box-shadow: 3px 3px 5px rgba(0, 0, 0, 0.6);
+  }
+
+  &__add-minus:active {
+    box-shadow: 1px 1px 1px rgba(0, 0, 0, 0.4);
+  }
+
+  &__add-minus::after {
+    content: "-";
+    font-size: 24px;
+    line-height: 35px;
+    color: #6e6e6e;
+    position: absolute;
+    top: 47%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+  }
+
+  &__add-num {
+    font-size: 24px;
+    line-height: 25px;
+  }
+
+  &__add-plus {
+    display: block;
+    width: 35px;
+    height: 35px;
+    border: 1px solid #c4c4c4;
+    border-radius: 50%;
+    position: relative;
+    cursor: pointer;
+    transition: all 0.3s;
+  }
+
+  &__add-plus:hover {
+    box-shadow: 3px 3px 5px rgba(0, 0, 0, 0.6);
+  }
+
+  &__add-plus:active {
+    box-shadow: 1px 1px 1px rgba(0, 0, 0, 0.4);
+  }
+
+  &__add-plus::after {
+    content: "+";
+    font-size: 24px;
+    line-height: 35px;
+    color: #6e6e6e;
+    position: absolute;
+    top: 47%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+  }
+
+  &__options {
+    text-align: center;
+  }
+
+  &__price {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+  }
+
+  &__price-new {
+    display: block;
+    font-weight: 600;
+    font-size: 20px;
+    line-height: 25px;
+    color: #404040;
+  }
+
+  &__price-old {
+    display: block;
+    font-weight: 600;
+    font-size: 14px;
+    line-height: 25px;
+    color: #6e6e6e;
+    text-align: center;
+  }
+
+  &__delete {
+    font-size: 13px;
+    line-height: 22px;
+    color: #437fc8;
+    padding-left: 20px;
+    transition: all 0.3s;
+    position: relative;
+    cursor: pointer;
+  }
+
+  &__delete:hover {
+    filter: brightness(40%);
+  }
+  
+  &__delete::before {
+    content: "";
+    position: absolute;
+    top: 50%;
+    left: 0;
+    transform: translateY(-50%);
+    width: 11px;
+    height: 11px;
+    background: url(../img/cancel-blue.svg) no-repeat center;
+  }
+}
